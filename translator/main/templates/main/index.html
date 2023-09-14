@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GFG</title>
+    <style>
+    body{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: aliceblue;
+    }
+    form{
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: solid;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: green;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 260px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#">BubeTranslate</a>
+      </div>
+<form method="post">
+	{% csrf_token %}
+    <h1>WELCOME TO TRANSLATE WORDS BY EBUBE</h1>
+    <h2>This tool allows you to translate your english text to up to 100 languages </h2>
+	<input width="100px" type="text" name="translate" required>
+	<br>
+	<select required name="language">
+		<option value="French">French</option>
+		<option value="Arabic">Arabic</option>
+		<option value="Dutch">Dutch</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Irish">Irish</option>
+	</select>
+	<br>
+	<button type="submit">Translate</button>
+
+    <div class="footer">
+        <p>Footer</p>
+      </div>
+</form>
+</body>
+</html>
