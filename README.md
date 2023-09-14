@@ -25,13 +25,13 @@ Before you can use this program, you need to have Python installed on your syste
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/translate-with-python.git
+   git clone https://github.com/your-username/django-translate-project.git
    ```
 
 2. Navigate to the project directory:
 
    ```shell
-   cd translate-with-python
+   cd django-translate-project
    ```
 
 3. Install the required dependencies:
